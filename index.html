@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="title-section" contenteditable="true">
+            EXCEL CLONE
+        </div>
+        <div class="menu-bar-section">
+            <div data-open="false">File</div>
+            <div>Help</div>
+        </div>
+        <div class="menu-options-section">
+            <div class="bold-italics-underline">
+                <span class="material-icons" data-bold="false">
+                    format_bold
+                </span>
+                <span class="material-icons" data-italic="false">
+                    format_italic
+                </span>
+                <span class="material-icons" data-underline="false">
+                    format_underlined
+                </span>
+            </div>
+            <div class="font-type-size">
+                <select id="family">
+                    <option disabled selected hidden>Font Family</option>
+                    <option>Arial</option>
+                    <option>New Times Roman</option>
+                    <option>Courier New</option>
+                    <option>Georgia</option>
+                    <option>Verdana</option>
+                    <option>WeldWest</option>
+                </select>
+                <select id="size">
+                    <option disabled selected hidden>Font Size</option>
+                    <option >16</option>
+                    <option >17</option>
+                    <option >18</option>
+                    <option >19</option>
+                    <option >20</option>
+                    <option >21</option>
+                    <option >22</option>
+                </select>
+            </div>
+            <div class="align-cell-content">
+                <span class="material-icons">
+                    format_align_left
+                </span>
+                <span class="material-icons">
+                    format_align_center
+                </span>
+                <span class="material-icons">
+                    format_align_right
+                </span>
+                
+            </div>
+            <div class="cell-color-options">
+                <span class="material-icons">
+                    format_color_fill
+                </span>
+                <span class="material-icons">
+                    format_color_text
+                    </span>
+            </div>
+        </div>
+        <div class="formula-section">
+            <div  class="selected-cell-div" data-placeholder="Last Selected Cell"></div>
+            <input type="text" class="formula-input-section" placeholder="Formula">
+        </div>
+        <div class="grid">
+            <div class="blank-corner"></div>
+            <div class="row-number-section"></div>
+            <div class="column-tag-section"></div>
+            <div class="cell-section"></div>
+        </div>
+        <div class="sheets-section"></div>
+    </div>
+    <script src="script.js"></script>
+    <script src="styleScript.js"></script>
+</body>
+</html>
